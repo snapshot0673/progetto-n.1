@@ -1,0 +1,93 @@
+body {
+    background-color: white;
+    opacity:1;
+    overflow:scroll;
+    
+    
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background-color: orange;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0px;
+    width: 170px;
+}
+
+nav {
+    float: right;
+    padding:50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 45px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: ease-in-out 350ms;
+}
+
+nav a:hover::before {
+    width: 90%;
+    width: 100%;
+}
+
+.discord-widget {
+    padding: 40px;
+}
+
+
+.container2{
+
+  color:black;
+  float:right;
+  width:200px;
+  padding-top: 120px;
+  font-size: 20px;
+  padding-right:250px;
+  padding-left:70px;
+  text-align:center;
+  position:static;
+  
+
+}
